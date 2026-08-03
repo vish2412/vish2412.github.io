@@ -169,6 +169,46 @@ width:100%;
 border-radius:10px;
 }
 
+/* PROJECT METRICS */
+
+.metrics{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+margin-top:20px;
+}
+
+.metric{
+background:rgba(0,234,255,0.08);
+border:1px solid rgba(0,234,255,0.3);
+border-radius:10px;
+padding:12px 18px;
+text-align:center;
+min-width:110px;
+}
+
+.metric b{
+display:block;
+font-size:22px;
+color:#00eaff;
+}
+
+.metric span{
+font-size:12px;
+color:#ccc;
+}
+
+.tag{
+display:inline-block;
+background:rgba(0,234,255,0.15);
+color:#00eaff;
+padding:4px 12px;
+border-radius:20px;
+font-size:12px;
+font-weight:500;
+margin-bottom:12px;
+}
+
 /* CONTACT */
 
 .contact p{
@@ -227,9 +267,9 @@ font-size:36px;
 <h2>Career Objective</h2>
 <div class="card">
 <p>
-I am an MCA student with a background in BCA and a strong interest in software development.
-I have basic knowledge in HTML, Python, JavaScript and MySQL and I enjoy building web-based
-applications. My goal is to grow as a developer and contribute to innovative software projects.
+MCA student with knowledge in Python, HTML, SQL, NoSQL and Machine Learning. Interested in software
+development, cybersecurity, and web technologies, with hands-on experience building web applications
+and machine learning projects. Seeking an opportunity to contribute and grow as a developer.
 </p>
 </div>
 </section>
@@ -239,7 +279,7 @@ applications. My goal is to grow as a developer and contribute to innovative sof
 
 <div class="card">
 <h3>MCA – Master of Computer Applications</h3>
-<p>Srm Valliammai Engineering College</p>
+<p>SRM Valliammai Engineering College</p>
 <p>2025 – 2027</p>
 </div>
 
@@ -251,15 +291,15 @@ applications. My goal is to grow as a developer and contribute to innovative sof
 </div>
 
 <div class="card">
-<h3>Higher Secondary (XII)</h3>
-<p>Tamil Nadu State Board</p>
-<p>CGPA: 9.70 / 10</p>
+<h3>Higher Secondary (XII) – Commerce</h3>
+<p>Suddhananda Vidyalaya Matriculation Hr. Sec. School</p>
+<p>CGPA: 9.70 / 10 · 2022</p>
 </div>
 
 <div class="card">
 <h3>Secondary (X)</h3>
-<p>Tamil Nadu State Board</p>
-<p>CGPA: 8.60 / 10</p>
+<p>Suddhananda Vidyalaya Matriculation Hr. Sec. School</p>
+<p>CGPA: 8.60 / 10 · 2020</p>
 </div>
 
 </section>
@@ -269,13 +309,6 @@ applications. My goal is to grow as a developer and contribute to innovative sof
 <div class="card">
 
 <div class="skill">
-<div class="skill-name">HTML</div>
-<div class="skill-bar">
-<div class="skill-level" style="width:85%"></div>
-</div>
-</div>
-
-<div class="skill">
 <div class="skill-name">Python</div>
 <div class="skill-bar">
 <div class="skill-level" style="width:90%"></div>
@@ -283,20 +316,52 @@ applications. My goal is to grow as a developer and contribute to innovative sof
 </div>
 
 <div class="skill">
-<div class="skill-name">Web Development</div>
+<div class="skill-name">HTML / CSS</div>
 <div class="skill-bar">
 <div class="skill-level" style="width:85%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">SQL / MySQL</div>
+<div class="skill-bar">
+<div class="skill-level" style="width:80%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Machine Learning</div>
+<div class="skill-bar">
+<div class="skill-level" style="width:80%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Django</div>
+<div class="skill-bar">
+<div class="skill-level" style="width:70%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">JavaScript (Basics)</div>
+<div class="skill-bar">
+<div class="skill-level" style="width:50%"></div>
 </div>
 </div>
 
 </div>
 <div class="card skills">
 
+<span>Java (Basics)</span>
+<span>C++ (Basics)</span>
+<span>NoSQL (MongoDB)</span>
 <span>MS Excel</span>
 <span>MS Word</span>
 <span>PowerPoint</span>
 <span>Team Management</span>
 <span>Communication</span>
+<span>Problem Solving</span>
 
 </div>
 
@@ -307,10 +372,37 @@ applications. My goal is to grow as a developer and contribute to innovative sof
 
 <div class="card">
 
+<span class="tag">Django · Machine Learning</span>
+<h3>PhiWebD – Multi-Model Phishing Website Detection</h3>
+
+<p>
+A phishing website detection system built with <b>Django 4.2</b> and machine learning, designed
+to analyze a URL's structure, SSL certificate, WHOIS record, and page content to flag malicious sites
+in real time.
+</p>
+
+<ul>
+<li>Integrated six ML models: Logistic Regression, SVM, Random Forest, Decision Tree, KNN, and Gradient Boosting.</li>
+<li>Extracted and analyzed 42 features from URL, SSL, WHOIS, and webpage content.</li>
+<li>Built a dashboard with scan history, API integration, and real-time phishing analysis.</li>
+</ul>
+
+<div class="metrics">
+<div class="metric"><b>98.1%</b><span>Detection accuracy</span></div>
+<div class="metric"><b>400K+</b><span>Sites in dataset</span></div>
+<div class="metric"><b>6</b><span>ML models used</span></div>
+<div class="metric"><b>42</b><span>Features analyzed</span></div>
+</div>
+
+</div>
+
+<div class="card">
+
+<span class="tag">PHP · MySQL</span>
 <h3>Employee Management System</h3>
 
 <p>
-A web-based system developed using <b>PHP and MySQL</b>.  
+A web-based system developed using <b>PHP and MySQL</b>.
 It contains two modules:
 </p>
 
@@ -327,20 +419,22 @@ It contains two modules:
 <h2>Certifications & Training</h2>
 
 <div class="card">
-<h3>Full Stack Java (Basic)</h3>
+<h3>Full Stack Java Training</h3>
 <p>SRM Valliammai Engineering College</p>
-<p>Learned HTML, CSS, JavaScript, MySQL, and Java basics.</p>
 </div>
 
 <div class="card">
-<h3>Advanced Excel</h3>
+<h3>Junior Software Developer Course</h3>
+<p>NSDC</p>
+</div>
+
+<div class="card">
+<h3>Advanced Excel Training</h3>
 <p>Tamil Nadu Advanced Technical Training Institute</p>
 </div>
 
 <div class="card">
-<h3>Junior Software Developer Training</h3>
-<p>NSDC Program – Vidhya Sagar Women's College</p>
-<p>Learned basics of C++ and IT-ITES sector knowledge.</p>
+<h3>Hands-on Workshop on Advanced Python Programming</h3>
 </div>
 
 </section>
@@ -352,17 +446,19 @@ It contains two modules:
 
 <ul>
 
-<li>🥈 2nd Place in Debugging Competition – Vidhya Sagar Women's College</li>
+<li>🥈 2nd Place in Debugging Competition – Department of Computer Science, Vidhya Sagar Women's College</li>
 
-<li>Presented a paper on <b>Artificial Intelligence Overview</b> at ICCMCI-2025</li>
+<li>Presented a paper titled <b>"Artificial Intelligence Overview"</b> at ICCMCI-2025</li>
 
-<li>Participated in Advanced Python Programming Workshop</li>
+<li>Presented a paper titled <b>"PhiWebD – Multi-Model Phishing Website Detection Using Machine Learning"</b> at NCRTCI-2026</li>
+
+<li>Presented "PhiWebD" at the Mini Project Expo</li>
+
+<li>Participated in National Level Hackathon – TRIGENIX-26</li>
+
+<li>Student Coordinator for Industrial Visit (IV) at VSWC</li>
 
 <li>Attended International Webinar on Microsoft Copilot</li>
-
-<li>Student Coordinator for Industrial Visit (IV)</li>
-
-<li>Participated in Chess Competition</li>
 
 </ul>
 
@@ -381,7 +477,7 @@ It contains two modules:
 
 <p><b>Location:</b> Thiruporur, Tamil Nadu</p>
 
-<p><b>LinkedIn:</b>  
+<p><b>LinkedIn:</b>
 <a href="https://www.linkedin.com/in/vishnu-priya-r-58aa87296" target="_blank">
 linkedin.com/in/vishnu-priya-r
 </a>
