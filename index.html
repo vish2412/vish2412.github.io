@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishnu Priya | Portfolio</title>
+
+<style>
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins', sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:#fff;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:60px 20px;
+}
+
+header h1{
+font-size:48px;
+letter-spacing:2px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+color:#ddd;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+padding:15px;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00eaff;
+transform:scale(1.1);
+}
+
+/* SECTIONS */
+
+section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+section h2{
+font-size:32px;
+margin-bottom:30px;
+position:relative;
+}
+
+section h2::after{
+content:"";
+width:60px;
+height:4px;
+background:#00eaff;
+position:absolute;
+bottom:-10px;
+left:0;
+}
+
+/* GLASS CARDS */
+
+.card{
+background:rgba(255,255,255,0.08);
+border-radius:12px;
+padding:25px;
+margin-bottom:25px;
+backdrop-filter:blur(10px);
+transition:0.3s;
+border:1px solid rgba(255,255,255,0.15);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* SKILLS */
+
+.skill{
+margin-bottom:15px;
+}
+
+.skill-name{
+margin-bottom:5px;
+}
+
+.skill-bar{
+background:#444;
+height:8px;
+border-radius:10px;
+overflow:hidden;
+}
+
+.skill-level{
+height:8px;
+background:#00eaff;
+}
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:10px;
+}
+
+.skills span{
+background:linear-gradient(135deg,#00eaff,#007cf0);
+color:white;
+padding:10px 18px;
+border-radius:30px;
+font-size:14px;
+font-weight:500;
+letter-spacing:0.5px;
+cursor:pointer;
+transition:all 0.3s ease;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Hover Animation */
+
+.skills span:hover{
+transform:translateY(-5px) scale(1.05);
+background:linear-gradient(135deg,#ff7eb3,#ff758c);
+box-shadow:0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* PROJECT */
+
+.project{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.project img{
+width:100%;
+border-radius:10px;
+}
+
+/* CONTACT */
+
+.contact p{
+margin:10px 0;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+nav{
+flex-wrap:wrap;
+gap:15px;
+}
+
+.project{
+grid-template-columns:1fr;
+}
+
+header h1{
+font-size:36px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Vishnu Priya R</h1>
+<p>Aspiring Developer | MCA Student</p>
+<p>Email: vishnupriyaramesh877@gmail.com</p>
+<p>Thiruporur, Tamil Nadu</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2>Career Objective</h2>
+<div class="card">
+<p>
+I am an MCA student with a background in BCA and a strong interest in software development.
+I have basic knowledge in HTML, Python, JavaScript and MySQL and I enjoy building web-based
+applications. My goal is to grow as a developer and contribute to innovative software projects.
+</p>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+
+<div class="card">
+<h3>MCA – Master of Computer Applications</h3>
+<p>Srm Valliammai Engineering College</p>
+<p>2025 – 2027</p>
+</div>
+
+<div class="card">
+<h3>BCA – Bachelor of Computer Applications</h3>
+<p>Vidhya Sagar Women's College</p>
+<p>CGPA: 8.90 / 10</p>
+<p>2022 – 2025</p>
+</div>
+
+<div class="card">
+<h3>Higher Secondary (XII)</h3>
+<p>Tamil Nadu State Board</p>
+<p>CGPA: 9.70 / 10</p>
+</div>
+
+<div class="card">
+<h3>Secondary (X)</h3>
+<p>Tamil Nadu State Board</p>
+<p>CGPA: 8.60 / 10</p>
+</div>
+
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="card">
+
+<div class="skill">
+<div class="skill-name">HTML</div>
+<div class="skill-bar">
+<div class="skill-level" style="width:85%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Python</div>
+<div class="skill-bar">
+<div class="skill-level" style="width:90%"></div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">Web Development</div>
+<div class="skill-bar">
+<div class="skill-level" style="width:85%"></div>
+</div>
+</div>
+
+</div>
+<div class="card skills">
+
+<span>MS Excel</span>
+<span>MS Word</span>
+<span>PowerPoint</span>
+<span>Team Management</span>
+<span>Communication</span>
+
+</div>
+
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="card">
+
+<h3>Employee Management System</h3>
+
+<p>
+A web-based system developed using <b>PHP and MySQL</b>.  
+It contains two modules:
+</p>
+
+<ul>
+<li><b>Admin Module</b> – Manage employee details such as department, salary, and leave.</li>
+<li><b>Employee Module</b> – Employees can view their personal and job details.</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="certifications">
+<h2>Certifications & Training</h2>
+
+<div class="card">
+<h3>Full Stack Java (Basic)</h3>
+<p>SRM Valliammai Engineering College</p>
+<p>Learned HTML, CSS, JavaScript, MySQL, and Java basics.</p>
+</div>
+
+<div class="card">
+<h3>Advanced Excel</h3>
+<p>Tamil Nadu Advanced Technical Training Institute</p>
+</div>
+
+<div class="card">
+<h3>Junior Software Developer Training</h3>
+<p>NSDC Program – Vidhya Sagar Women's College</p>
+<p>Learned basics of C++ and IT-ITES sector knowledge.</p>
+</div>
+
+</section>
+
+<section id="achievements">
+<h2>Achievements & Activities</h2>
+
+<div class="card">
+
+<ul>
+
+<li>🥈 2nd Place in Debugging Competition – Vidhya Sagar Women's College</li>
+
+<li>Presented a paper on <b>Artificial Intelligence Overview</b> at ICCMCI-2025</li>
+
+<li>Participated in Advanced Python Programming Workshop</li>
+
+<li>Attended International Webinar on Microsoft Copilot</li>
+
+<li>Student Coordinator for Industrial Visit (IV)</li>
+
+<li>Participated in Chess Competition</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<div class="card">
+
+<p><b>Email:</b> vishnupriyaramesh877@gmail.com</p>
+
+<p><b>Phone:</b> +91 8939459415</p>
+
+<p><b>Location:</b> Thiruporur, Tamil Nadu</p>
+
+<p><b>LinkedIn:</b>  
+<a href="https://www.linkedin.com/in/vishnu-priya-r-58aa87296" target="_blank">
+linkedin.com/in/vishnu-priya-r
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Vishnu Priya | Portfolio</p>
+</footer>
+
+</body>
+</html>
